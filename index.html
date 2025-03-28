@@ -4,44 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Calculator</title>
+    <title>To-Do App</title>
 </head>
 <body>
-    <h1>CALCULATOR</h1>
-     
-    <div class="container">
-       <form action="">
-        <p>CASIO</p>
-        <input type="text" id="screen">
-        <br>
-
-        <input class="button number" type="button" value="7" onclick="clickk(value)">
-        <input class="button number" type="button" value="8" onclick="clickk(value)">
-        <input class="button number" type="button" value="9" onclick="clickk(value)">
-        <input class="button operator" type="button" value="/" onclick="clickk(value)">
-        <br>
-
-        <input class="button number" type="button" value="4" onclick="clickk(value)">
-        <input class="button number" type="button" value="5" onclick="clickk(value)">
-        <input class="button number" type="button" value="6" onclick="clickk(value)">
-        <input class="button operator" type="button" value="*" onclick="clickk(value)">
-        <br>
-
-        <input class="button number" type="button" value="1" onclick="clickk(value)">
-        <input class="button number" type="button" value="2" onclick="clickk(value)">
-        <input class="button number" type="button" value="3" onclick="clickk(value)">
-        <input class="button operator" type="button" value="+" onclick="clickk(value)">
-        <br>
-
-        <input class="button clear" type="button" value="c" onclick="clearscreen()" >
-        <input class="button number" type="button" value="0" onclick="clickk(value)">
-        <input class="button result" type="button" value="=" onclick="findresult()" >
-        <input class="button operator" type="button" value="-" onclick="clickk(value)">
-        <br>
-       </form>
+    <h1>TO-DO APP</h1>
+    <form action="">
+        <input type="text" class="todo-input">
+        <button  class="todo-button" type="submit">Submit
+            <i class="fas fa-plus-circle fa -la"></i>
+        </button>
+        <div class="select">
+            <select name="todos" id="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
     </div>
-
-
-    <script src="./calc.js"></script>
+     
+    <script src="./script.js"></script>
+    
 </body>
 </html>
